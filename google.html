@@ -2,10 +2,48 @@
 <html>
     <head>
         <style>
-
+            .bodystyle{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background: #fff;
+                display: block;
+                font-size:14px;
+                font-family: arial,sans-serif;
+                color: #222;
+            }
+            .bigdiv{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                }
+            .topdiv{
+                display:flex;
+                align-items: center;
+                padding: 6px;
+                height: 60px;
+            }
+            .about{
+                display: inline-block;
+                padding: 5px;
+                margin: 0px;
+                color: #222;
+            }
+            .toprightdiv{
+                float: right;
+                padding-left: 32px;
+                display: flex;
+            }
         </style>
     </head>
-        <body>
-            <h1>Google home page</h1>
+        <body class="bodystyle">
+            <div class="bigdiv">
+                <div class="topdiv">
+                <a class="about">About</a>
+                <a class="about">Store</a>
+                <div class="toprightdiv">
+                    <a>Gmail</a>
+                </div>
+            </div>
         </body>
 </html>
