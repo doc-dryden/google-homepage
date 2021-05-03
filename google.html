@@ -2,6 +2,9 @@
 <html>
     <head>
         <style>
+            div{
+                display: block;
+            }
             .bodystyle{
                 height: 100%;
                 margin: 0;
@@ -30,9 +33,33 @@
                 color: #222;
             }
             .toprightdiv{
+                display: inline-block;
+                flex-grow: 1;
+            }
+            .toprightdiv2{
+                min-width: auto;
+                font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+                z-index: 986;
+                height: 48px;
+                color: black;
+                position: relative;
+                transition: box-shadow 250ms;
+            }
+            .toprightdiv3{
+                padding-left: 0;
                 float: right;
-                padding-left: 32px;
+                box-sizing: border-box;
+                height: 48px;
+                line-height: normal;
+                padding:0 4px;
+                flex: 0 0 auto;
+                justify-content: flex-end;
+                vertical-align: middle;
+                white-space: nowrap;
+                -webkit-box-align: center;
+                align-items: center;
                 display: flex;
+                -webkit-user-select: none;
             }
         </style>
     </head>
@@ -42,7 +69,12 @@
                 <a class="about">About</a>
                 <a class="about">Store</a>
                 <div class="toprightdiv">
-                    <a>Gmail</a>
+                    <div class="toprightdiv2">
+                        <div class="toprightdiv3">
+                            <a>Gmail</a>
+                            <a>Images</a>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </body>
