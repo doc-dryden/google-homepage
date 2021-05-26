@@ -95,6 +95,39 @@
                 justify-content: center;
                 display: flex;
             }
+            .tempborder{
+                border-style: solid;
+                border-width: 3px;
+            }
+            .searchflex{
+                display: flex;
+                justify-content: center;
+            }
+            .searchsubmit{
+                height: 34px;
+                padding-left: 16px;
+                padding-right: 16px;
+                margin: 11px 4px;
+                background-color: #f8f9fa;
+                font-family: Roboto,arial,sans-serif;
+                font-size: 14px;
+                color: #3c4043;
+                cursor: pointer;
+                border: 1px solid #f8f9fa;
+            }
+            .luckysubmit{
+                height: 34px;
+                padding-left: 16px;
+                padding-right: 16px;
+                margin: 11px 4px;
+                background-color: #f8f9fa;
+                font-family: Roboto,arial,sans-serif;
+                font-size: 14px;
+                color: #3c4043;
+                cursor: pointer;
+                border: 1px solid #f8f9fa;
+
+            }
 
     </style>
 <body>
@@ -129,6 +162,15 @@
             </div>
         </div>
     </div>  
+    <div class="searchflex">
+        <div>
+            <input type="submit" value="Google Search" class="searchsubmit">
+            
+        </div>
+        <div>
+            <input type="submit" value="I'm Feeling Lucky" class="luckysubmit">
+        </div>
+    </div>
 </body>
 </head>
 </html>
